@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Request a Quote — Renes Hicy International</title>
+<meta name="description" content="Request a quote from Renes Hicy International for tiles, doors, plumbing fixtures, ceilings, or custom project supply." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Andymore Business Concept" class="logo-img">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="catalog.html">Catalog</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a class="btn btn-brass" style="padding:10px 20px; font-size:.8rem;" href="quote.html">Request Quote</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+  </div>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <img src="images/logo.png" alt="Andymore Business Concept" class="logo-img">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 11.5 12 4l8 7.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke-linejoin="round"/></svg>
+        Home
+      </a>
+      <a href="services.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        Services
+      </a>
+      <a href="catalog.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 10h16M4 14h10" stroke-linecap="round"/></svg>
+        Catalog
+      </a>
+      <a href="projects.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="1"/><path d="M8 21h8M12 17v4" stroke-linecap="round"/></svg>
+        Projects
+      </a>
+      <a href="contact.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v4a2 2 0 0 1-2 2C9.5 22 2 14.5 2 7a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>
+        Contact
+      </a>
+    </nav>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-cta">
+      <a class="btn btn-brass" href="quote.html">Request a Quote</a>
+    </div>
+    <div class="mobile-menu-social">
+      <a class="mobile-social-icon" href="https://wa.me/2349034457588" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 .4C7.4.4.4 7.4.4 16c0 3 .8 5.8 2.3 8.2L.4 31.6l7.6-2.2c2.3 1.3 5 2 7.9 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4Zm0 28.4c-2.6 0-5-.7-7.1-2l-.5-.3-4.5 1.3 1.3-4.4-.3-.5C3.4 21 2.6 18.5 2.6 16c0-7.4 6-13.4 13.4-13.4S29.4 8.6 29.4 16 23.4 28.8 16 28.8Zm7.3-9.9c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.2-.5.3-.9.1-1.2-.5-2.5-1.3-3.6-2.5-1-1.1-1.6-2-1.9-2.5-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.3 0-.5-.1-.7-.1-.2-.9-2.2-1.2-2.9-.3-.7-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.5 1.4-1.5 3.4s1.5 4 1.8 4.3c.2.3 2.6 4 6.4 5.5 3.8 1.5 3.8 1 4.5.9.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5Z"/></svg>
+      </a>
+      <a class="mobile-social-icon" href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="mobile-social-icon" href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <p class="eyebrow">Request a Quote</p>
+    <h1 class="font-display">Tell us about your project.</h1>
+    <p>Fill in the form below with as much detail as you can. Our team will get back to you within 24 hours with pricing and availability.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:72px;">
+  <div class="wrap" style="max-width:680px; margin:0 auto;">
+    <form class="contact-form" id="quoteForm" action="https://formsubmit.co/andrewmaduabuchiokwara@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Quote Request — Renes Hicy Website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Adewale Johnson" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0903 445 7588" required>
+      </div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="category">What do you need?</label>
+        <select id="category" name="category">
+          <option>Tiles</option>
+          <option>Doors</option>
+          <option>Plumbing Fixtures</option>
+          <option>Ceilings &amp; Accessories</option>
+          <option>Custom Project Supply</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="quantity">Estimated quantity / scale</label>
+        <input type="text" id="quantity" name="quantity" placeholder="e.g. 200 sqm, 3-bedroom apartment">
+      </div>
+      <div class="field">
+        <label for="message">Project details</label>
+        <textarea id="message" name="message" placeholder="Location, timeline, preferred finish, budget range..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-brass" style="justify-content:center;">Send Request</button>
+      <div class="form-success" id="formSuccess">
+        ✓ &nbsp; Your message has been sent! We'll get back to you within 24 hours.
+      </div>
+    </form>
+
+    <p style="text-align:center; color:var(--text-body); font-size:.875rem; margin-top:28px;">
+      Prefer to talk directly? Message us on
+      <a href="https://wa.me/2349034457588" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600;">WhatsApp</a>
+      or call +234 903 445 7588.
+    </p>
+  </div>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/2349034457588" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 .4C7.4.4.4 7.4.4 16c0 3 .8 5.8 2.3 8.2L.4 31.6l7.6-2.2c2.3 1.3 5 2 7.9 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4Zm0 28.4c-2.6 0-5-.7-7.1-2l-.5-.3-4.5 1.3 1.3-4.4-.3-.5C3.4 21 2.6 18.5 2.6 16c0-7.4 6-13.4 13.4-13.4S29.4 8.6 29.4 16 23.4 28.8 16 28.8Zm7.3-9.9c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.2-.5.3-.9.1-1.2-.5-2.5-1.3-3.6-2.5-1-1.1-1.6-2-1.9-2.5-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.3 0-.5-.1-.7-.1-.2-.9-2.2-1.2-2.9-.3-.7-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.5 1.4-1.5 3.4s1.5 4 1.8 4.3c.2.3 2.6 4 6.4 5.5 3.8 1.5 3.8 1 4.5.9.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5Z"/></svg>
+</a>
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand footer-col">
+      <div class="footer-brand-name">
+        <span class="footer-brand-andy">Andy<em>more</em></span>
+        <span class="footer-brand-sub">Business Concept</span>
+      </div>
+      <p>Premium tiles, plumbing, doors, and interior finishing materials supplied and installed across Nigeria since 2004.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="eyebrow">Company</h4>
+      <ul>
+        <li><a href="services.html#about">About Us</a></li>
+        <li><a href="services.html#about">Our Mission &amp; Vision</a></li>
+        <li><a href="contact.html">Careers</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="eyebrow">Contact</h4>
+      <ul class="footer-contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12Z" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.4"/></svg>
+          <span>36/75 Yakoyo Road, Before Alagbole Road, Ojodu Berger, Lagos State</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v4a2 2 0 0 1-2 2C9.5 22 2 14.5 2 7a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>
+          <span>+234 903 445 7588</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7" stroke-linejoin="round"/></svg>
+          <span>andrewmaduabuchiokwara@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="areas footer-col">
+      <h4 class="eyebrow">Areas We Serve</h4>
+      <p>Proudly supplying building and finishing materials to clients across Ojodu Berger, Magodo, Alausa, Ikeja, Isheri, Berger, and surrounding areas of Lagos State, with nationwide delivery available for large-scale supply contracts.</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year"></span> Renes Hicy International. All rights reserved.</p>
+    <p>Terms &amp; Privacy</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
